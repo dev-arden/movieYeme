@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tsis.movie.dao.ReservationDAO">
+	<insert id="insertReservation" parameterType="reservation">
+			insert into reservation(phone_number, movie_title, ticket_count,theater_id,play_time,reservation.row,col,seats)
+			values(  
+				#{phone_number}, 
+				#{movie_title},
+				#{ticket_count},
+				#{theater_id}, 
+				#{play_time},
+				#{row},
+				#{col},
+				#{seats}
+			)
+	</insert>
+	
+	<select id="getReservation" parameterType="String" resultType="Reservation">
+		SELECT movie_title, theater_id, play_time, reservation.row, col
+		FROM reservation
+		WHERE phone_number = #{phone};
+	</select>
+</mapper>

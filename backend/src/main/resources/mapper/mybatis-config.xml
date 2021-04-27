@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+   <typeAliases>
+      <package name="com.tsis.movie.dto"/>
+   </typeAliases>
+   
+   <mappers>
+     <mapper resource="mapper/movie.xml"/>
+     <mapper resource="mapper/theater.xml"/>
+     <mapper resource="mapper/reservation.xml"/>
+     <mapper resource="mapper/yeme.xml"/>
+   </mappers>
+   
+</configuration>

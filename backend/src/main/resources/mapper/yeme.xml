@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+ <mapper namespace="com.tsis.movie.dao.YemeDAO">
+ 	<select id="getYeme" resultType="Yeme">
+		select r.movie_title, r.theater_id, r.play_time, t.rows, t.cols, json_arrayagg(
+				JSON_OBJECT(
+				'row', r.row,
+				'column', r.col
+				)
+			)as seats
+		from reservation r
+		JOIN theater t
+		ON r.theater_id = t.theater_id AND r.play_time = t.play_time
+		WHERE r.theater_id = #{id}
+		and t.play_time = #{time};
+	</select>
+ </mapper>
