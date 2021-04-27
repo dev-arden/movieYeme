@@ -2,6 +2,12 @@
 ## 기술스택 
 > Vue.js + HTML + JavaScript + Spring + Java + Mysql
 
+
+## 산출물
+- [DB스키마(엑셀)](db_schema.csv)
+- [war](movie-0.0.1-SNAPSHOT.war)
+
+
 ## 화면캡쳐
 ### 동영상 시연
 ![1](images/Animation.gif)
