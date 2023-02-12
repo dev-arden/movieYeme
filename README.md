@@ -1,18 +1,14 @@
-# 2차 기술교육 과제 : 영화 예매 프로그램
-# Technical-education Part2 : Making a movie ticketing program
-## 기술스택
-## Skills
+# 2차 기술교육 과제 : 영화 예매 프로그램 (Technical-education Part2 : Making a movie ticketing program) 
+## 기술스택 (Skills)
 > Vue.js + HTML + JavaScript + Spring + Java + Mysql
 
 
-## 산출물
-## Outputs
+## 산출물 (Outputs)
 - [DB스키마(엑셀)](db_schema.csv)
 - [war](movie-0.0.1-SNAPSHOT.war)
 
 
-## 화면캡쳐
-## Screen capture
+## 화면캡쳐 (Screen capture)
 ### 동영상 시연
 ### Video demonstration
 ![1](images/Animation.gif)
